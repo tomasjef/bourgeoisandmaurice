@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="One-page website with full-bleed scalable image and editable text">
-    <title>Scalable Image with Editable Text</title>
+    <meta name="description" content="bourgeoisandmaurice.co.uk holding page">
+    <title>Bourgeois & Maurice</title>
     <style>
         * {
             margin: 0;
@@ -52,11 +52,26 @@
 
         .text-overlay p {
             font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .text-overlay p:hover {
+            color: #ffcc00; /* Hover color change */
         }
 
         .third-text {
-            font-size: 1em; /* Added a third text size */
+            font-size: 1em;
             margin-top: 10px;
+        }
+
+        .third-text a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .third-text a:hover {
+            text-decoration: underline;
         }
 
         .button-container {
@@ -78,7 +93,12 @@
         }
 
         .btn:hover {
-            background-color: #cc5500; /* Hover effect */
+            background-color: #cc5500;
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
         }
 
         @media (max-width: 768px) {
@@ -101,15 +121,16 @@
             <h1>Bourgeois & Maurice</h1>
             <p>"Cabaret legends” INDEPENDENT</p>
             <p class="third-text">
-                Contact Us: info@bourgeoisandmaurice.co.uk
+                Contact Us: <a href="mailto:info@bourgeoisandmaurice.co.uk">info@bourgeoisandmaurice.co.uk</a>
                 <br>
-                For live bookings contact Tim Whitehead Management [tim@tim-whitehead.com]
+                For live bookings contact <a href="mailto:tim@tim-whitehead.com">Tim Whitehead Management</a>
                 <br>
-                For writing enquiries contact Tanya Tillett at Casarotto [tanya@casarotto.co.uk]</p>
+                For writing enquiries contact <a href="mailto:tanya@casarotto.co.uk">Tanya Tillett at Casarotto</a>
+            </p>
             <div class="button-container">
-                <button class="btn">Instagram</button>
-                <button class="btn">TikTok</button>
-                <button class="btn">Facebook</button>
+                <button class="btn"><a href="https://instagram.com" target="_blank">Instagram</a></button>
+                <button class="btn"><a href="https://tiktok.com" target="_blank">TikTok</a></button>
+                <button class="btn"><a href="https://facebook.com" target="_blank">Facebook</a></button>
             </div>
         </div>
     </div>
