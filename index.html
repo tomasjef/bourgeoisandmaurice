@@ -17,6 +17,7 @@
             width: 100%;
             font-family: Arial, sans-serif;
             color: white;
+            background-color: black; /* Ensure black background shows */
         }
 
         .container {
@@ -35,7 +36,7 @@
             height: 100%;
             object-fit: cover;
             opacity: 0.6; /* Image opacity set to 60% */
-            z-index: -1;
+            z-index: -1; /* Keeps it behind content */
         }
 
         .text-overlay {
@@ -49,17 +50,17 @@
 
         .text-overlay h1 {
             font-size: 3em;
-            line-height: 1.5; /* Added line height */
+            line-height: 1.5;
         }
 
         .text-overlay p {
             font-size: 1.5em;
-            line-height: 1.5; /* Added line height */
+            line-height: 1.5;
         }
 
         .third-text {
-            font-size: 1em;
-            line-height: 1.4; /* Added line height */
+            font-size: 1em; /* Set to 1em as requested */
+            line-height: 1.4;
             margin-top: 10px;
         }
 
@@ -89,7 +90,7 @@
             font-size: 1em;
             cursor: pointer;
             transition: background 0.3s ease;
-            line-height: 1.2; /* Added line height */
+            line-height: 1.2;
         }
 
         .btn:hover {
@@ -110,7 +111,7 @@
                 font-size: 1em;
             }
             .third-text {
-                font-size: 0.9em;
+                font-size: 1em; /* Ensuring consistent size */
             }
         }
     </style>
