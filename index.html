@@ -17,14 +17,13 @@
             width: 100%;
             font-family: Arial, sans-serif;
             color: white;
-            background-color: black; /* Ensure black background shows */
+            background-color: black; /* Ensures black background */
         }
 
         .container {
             position: relative;
             height: 100%;
             width: 100%;
-            background-color: black; /* Ensures black background behind the image */
             overflow: hidden;
         }
 
@@ -35,8 +34,18 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.6; /* Image opacity set to 60% */
-            z-index: -1; /* Keeps it behind content */
+            z-index: -2; /* Image stays behind everything */
+        }
+
+        /* Overlay to create the 60% opacity effect */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            z-index: -1; /* Sits between the image and text */
         }
 
         .text-overlay {
@@ -58,8 +67,9 @@
             line-height: 1.5;
         }
 
+        /* Fix: Ensure the third text (email section) is smaller */
         .third-text {
-            font-size: 1em; /* Set to 1em as requested */
+            font-size: 1em !important; /* Force smaller size */
             line-height: 1.4;
             margin-top: 10px;
         }
@@ -111,7 +121,7 @@
                 font-size: 1em;
             }
             .third-text {
-                font-size: 1em; /* Ensuring consistent size */
+                font-size: 1em !important; /* Ensuring consistent size */
             }
         }
     </style>
@@ -119,6 +129,7 @@
 <body>
     <div class="container">
         <img src="https://github.com/tomasjef/bourgeoisandmaurice/blob/main/Bourgeois&Maurice_JUMP_photo_by_Gustavo%20Papaleo.jpg?raw=true" alt="bourgeoisandmaurice" class="background-image">
+        <div class="overlay"></div> <!-- New dark overlay for opacity effect -->
         <div class="text-overlay">
             <h1>Bourgeois & Maurice</h1>
             <p>"Cabaret legends” INDEPENDENT</p>
